@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#0d0b18">
+    <meta name="description" content="Một món quà nhỏ dành cho bạn 🌷">
+
+    <title>Một món quà dành cho bạn 🌷</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         BACKGROUND
+    ====================================================== -->
+
+    <div class="background">
+
+        <div class="background-glow glow-1"></div>
+        <div class="background-glow glow-2"></div>
+        <div class="background-glow glow-3"></div>
+
+        <div class="stars" id="stars"></div>
+
+    </div>
+
+
+    <!-- =====================================================
+         PETALS
+    ====================================================== -->
+
+    <div class="petals" id="petals"></div>
+
+
+    <!-- =====================================================
+         APP
+    ====================================================== -->
+
+    <main class="app">
+
+
+        <!-- =================================================
+             SCENE 1 — GIFT BOX
+        ================================================== -->
+
+        <section class="scene scene-gift active" id="sceneGift">
+
+            <div class="intro">
+
+                <div class="intro-small">
+                    MỘT MÓN QUÀ NHỎ
+                </div>
+
+                <h1>
+                    Có một điều<br>
+                    mình muốn gửi bạn...
+                </h1>
+
+                <p>
+                    Không cần phải đoán đâu.<br>
+                    Cứ mở ra rồi sẽ biết. 🌷
+                </p>
+
+            </div>
+
+
+            <div class="gift-area">
+
+                <div class="gift-light"></div>
+
+                <div class="gift-box" id="giftBox">
+
+                    <div class="gift-lid">
+
+                        <div class="lid-top"></div>
+
+                        <div class="ribbon ribbon-horizontal"></div>
+
+                        <div class="bow">
+
+                            <div class="bow-left"></div>
+                            <div class="bow-right"></div>
+                            <div class="bow-center"></div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="gift-body">
+
+                        <div class="box-ribbon"></div>
+
+                        <div class="box-front-glow"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <button class="open-button" id="openGift">
+
+                <span class="button-icon">🎁</span>
+
+                <span>
+                    Mở món quà
+                </span>
+
+            </button>
+
+
+            <div class="tap-hint">
+                chạm nhẹ để mở
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SCENE 2 — FLOWER MENU
+        ================================================== -->
+
+        <section class="scene scene-flowers" id="sceneFlowers">
+
+            <div class="flowers-header">
+
+                <div class="eyebrow">
+                    MÓN QUÀ CỦA MÌNH
+                </div>
+
+                <h2>
+                    Có ba điều<br>
+                    mình muốn nói với bạn
+                </h2>
+
+                <p>
+                    Mỗi bông hoa là một lá thư.<br>
+                    Bạn cứ mở từng bông một nhé.
+                </p>
+
+            </div>
+
+
+            <div class="flower-garden">
+
+                <!-- FLOWER 1 -->
+
+                <button
+                    class="flower-card flower-purple"
+                    data-letter="1"
+                    id="flower1"
+                >
+
+                    <div class="flower-glow"></div>
+
+                    <div class="flower-visual">
+
+                        <div class="flower-stem"></div>
+
+                        <div class="flower-bloom">
+
+                            <span class="petal p1"></span>
+                            <span class="petal p2"></span>
+                            <span class="petal p3"></span>
+                            <span class="petal p4"></span>
+                            <span class="petal p5"></span>
+                            <span class="flower-center"></span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="flower-info">
+
+                        <span class="flower-number">
+                            01
+                        </span>
+
+                        <strong>
+                            Một chút bình yên
+                        </strong>
+
+                        <small>
+                            Mở lá thư
+                        </small>
+
+                    </div>
+
+                </button>
+
+
+
+                <!-- FLOWER 2 -->
+
+                <button
+                    class="flower-card flower-yellow locked"
+                    data-letter="2"
+                    id="flower2"
+                >
+
+                    <div class="flower-lock">
+                        🔒
+                    </div>
+
+                    <div class="flower-glow"></div>
+
+                    <div class="flower-visual">
+
+                        <div class="flower-stem"></div>
+
+                        <div class="flower-bloom">
+
+                            <span class="petal p1"></span>
+                            <span class="petal p2"></span>
+                            <span class="petal p3"></span>
+                            <span class="petal p4"></span>
+                            <span class="petal p5"></span>
+                            <span class="flower-center"></span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="flower-info">
+
+                        <span class="flower-number">
+                            02
+                        </span>
+
+                        <strong>
+                            Một chút hy vọng
+                        </strong>
+
+                        <small>
+                            Chưa mở
+                        </small>
+
+                    </div>
+
+                </button>
+
+
+
+                <!-- FLOWER 3 -->
+
+                <button
+                    class="flower-card flower-pink locked"
+                    data-letter="3"
+                    id="flower3"
+                >
+
+                    <div class="flower-lock">
+                        🔒
+                    </div>
+
+                    <div class="flower-glow"></div>
+
+                    <div class="flower-visual">
+
+                        <div class="flower-stem"></div>
+
+                        <div class="flower-bloom">
+
+                            <span class="petal p1"></span>
+                            <span class="petal p2"></span>
+                            <span class="petal p3"></span>
+                            <span class="petal p4"></span>
+                            <span class="petal p5"></span>
+                            <span class="flower-center"></span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="flower-info">
+
+                        <span class="flower-number">
+                            03
+                        </span>
+
+                        <strong>
+                            Một lời hứa
+                        </strong>
+
+                        <small>
+                            Chưa mở
+                        </small>
+
+                    </div>
+
+                </button>
+
+            </div>
+
+
+            <div class="flower-progress">
+
+                <span class="progress-dot active"></span>
+                <span class="progress-dot"></span>
+                <span class="progress-dot"></span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SCENE 3 — LETTER
+        ================================================== -->
+
+        <section class="scene scene-letter" id="sceneLetter">
+
+            <div class="letter-wrapper">
+
+                <div class="letter-paper">
+
+                    <div class="letter-decoration decoration-top">
+                        ✦
+                    </div>
+
+                    <div class="letter-number" id="letterNumber">
+                        01
+                    </div>
+
+
+                    <div class="letter-flower" id="letterFlower">
+                        🌷
+                    </div>
+
+
+                    <div class="letter-eyebrow" id="letterEyebrow">
+                        MỘT CHÚT BÌNH YÊN
+                    </div>
+
+
+                    <h2 id="letterTitle">
+                        Không sao nếu hôm nay<br>
+                        bạn chưa biết phải đi đâu
+                    </h2>
+
+
+                    <div class="letter-line"></div>
+
+
+                    <div class="letter-content" id="letterContent">
+
+                        <p>
+                            Nếu hôm nay bạn cảm thấy mình đang
+                            <strong>mất phương hướng</strong>,
+                            thì cũng không sao cả.
+                        </p>
+
+                        <p>
+                            Có những ngày mình thức dậy nhưng
+                            chẳng biết nên bắt đầu từ đâu,
+                            cũng chẳng biết điều gì mới thật sự
+                            là thứ mình muốn.
+                        </p>
+
+                        <p>
+                            Nhưng bạn biết không...
+                            <span class="emphasis">
+                                không phải cứ chưa tìm được đường
+                                thì có nghĩa là mình đang đi sai.
+                            </span>
+                        </p>
+
+                        <div class="letter-quote">
+                            <span>“</span>
+
+                            <p>
+                                Cứ đi chậm một chút cũng được,<br>
+                                miễn là bạn đừng bỏ cuộc với chính mình.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="letter-footer">
+
+                        <span>
+                            🌷
+                        </span>
+
+                        <span id="letterFooterText">
+                            Mình chỉ muốn bạn nhớ điều này.
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <button class="next-letter" id="nextLetter">
+
+                <span id="nextLetterText">
+                    Mở lá thư tiếp theo
+                </span>
+
+                <span>
+                    →
+                </span>
+
+            </button>
+
+
+            <button class="back-flowers" id="backFlowers">
+                ← Xem những bông hoa
+            </button>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SCENE 4 — FINAL
+        ================================================== -->
+
+        <section class="scene scene-final" id="sceneFinal">
+
+            <div class="final-particles"></div>
+
+
+            <div class="final-flower">
+
+                <div class="final-flower-glow"></div>
+
+                <div class="final-bloom">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <i></i>
+
+                </div>
+
+            </div>
+
+
+            <div class="final-eyebrow">
+                MỘT LỜI HỨA NHỎ
+            </div>
+
+
+            <h2>
+                Mình vẫn còn<br>
+                một lời hứa với bạn.
+            </h2>
+
+
+            <div class="promise-card">
+
+                <div class="promise-header">
+
+                    <span>💌</span>
+
+                    <span>
+                        LỜI HỨA CỦA MÌNH
+                    </span>
+
+                </div>
+
+
+                <div class="promise-body">
+
+                    <p>
+                        Mình sẽ sớm về Việt Nam.
+                    </p>
+
+                    <div class="promise-main">
+                        Và mình sẽ chở bạn<br>
+                        đi ăn chè. 🍧
+                    </div>
+
+                    <p>
+                        Hôm đó bạn chỉ cần chọn
+                        món chè mà bạn thích.
+                    </p>
+
+                    <p class="promise-last">
+                        Còn chuyện chở bạn đi...
+                        <strong>để mình lo.</strong>
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="final-message">
+
+                <p>
+                    Vậy nên hôm nay không được buồn
+                    quá lâu nhé.
+                </p>
+
+                <p>
+                    Phía trước vẫn còn rất nhiều điều
+                    đáng để chờ đợi.
+                </p>
+
+                <span>
+                    Và có cả một buổi đi ăn chè đang chờ. 🍧
+                </span>
+
+            </div>
+
+
+            <button class="final-button" id="finalButton">
+
+                <span>
+                    💛
+                </span>
+
+                Hôm nay vui một chút nhé
+
+            </button>
+
+
+            <div class="final-signature">
+
+                <div class="signature-heart">
+                    ♡
+                </div>
+
+                <p>
+                    — từ một người vẫn đang giữ lời hứa với bạn.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         TOAST
+    ====================================================== -->
+
+    <div class="toast" id="toast">
+        <span>🌷</span>
+        <span id="toastText">
+            Mở lá thư trước nhé.
+        </span>
+    </div>
+
+
+    <!-- SCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
